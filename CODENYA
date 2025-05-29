@@ -1,0 +1,15 @@
+import tkinter as tk
+from tkinter import messagebox
+from PIL import Image, ImageTk
+
+class LoadingPage:
+    def __init__(self, root):
+        self.root = root
+
+        self.bg_image = Image.open("opening.jpg")
+        self.bg_image = self.bg_image.resize((1366, 768))
+        self.bg_photo = ImageTk.PhotoImage(self.bg_image)
+
+        self.canvas = tk.Canvas(self.root, width=1366, height=768)
+        self.canvas.pack(fill="both", expand=True)
+        self.canvas.create_image(0, 0, image=self.bg_photo, anchor="nw")
