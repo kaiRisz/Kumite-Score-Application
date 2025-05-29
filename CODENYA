@@ -13,3 +13,22 @@ class LoadingPage:
         self.canvas = tk.Canvas(self.root, width=1366, height=768)
         self.canvas.pack(fill="both", expand=True)
         self.canvas.create_image(0, 0, image=self.bg_photo, anchor="nw")
+
+        self.tombol_mulai = tk.Button(
+            self.root, text="CLICK", font=("system", 17, "bold"), width=20, height=2,
+            bg="#cfcfcf", fg="black", command=self.buka_menu
+        )
+        self.tombol_mulai.place(relx=0.5, rely=0.65, anchor="center")
+
+    def buka_menu(self):
+        for widget in self.root.winfo_children():
+            widget.destroy()
+        Menu(self.root)
+
+class Menu:
+    def __init__(self, root):
+        self.root = root
+        
+        self.bg_image = Image.open("image/menu.jpg")
+        self.bg_image = self.bg_image.resize((1366, 768))
+        self.bg_photo = ImageTk.PhotoImage(self.bg_image)
