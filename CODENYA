@@ -33,7 +33,7 @@ class Menu:
         self.bg_image = self.bg_image.resize((1366, 768))
         self.bg_photo = ImageTk.PhotoImage(self.bg_image)
 
-      self.canvas = tk.Canvas(self.root, width=1366, height=768)
+        self.canvas = tk.Canvas(self.root, width=1366, height=768)
         self.canvas.pack(fill="both", expand=True)
         self.canvas.create_image(0, 0, image=self.bg_photo, anchor="nw")
 
@@ -48,3 +48,19 @@ class Menu:
             bg="white", fg="black", command=self.tampilkan_pesan
         )
         self.tombol_klasmen.place(relx=0.5, rely=0.72, anchor="center")
+
+        self.tombol_info = tk.Button(
+        self.root, text="INFO", font=("system", 16, "bold"), width=20, height=2,
+        bg="white", fg="black", command=self.tampilkan_pesan
+        )
+        self.tombol_info.place(relx=0.5, rely=0.82, anchor="center")
+
+    def tampilkan_pesan(self):
+        messagebox.askyesno("Informasi", "Nyari apaan sih? Pacar?")
+
+root = tk.Tk()
+root.title("Match Day App")
+root.geometry("1366x768")
+root.resizable(True, True)
+app = LoadingPage(root)
+root.mainloop() 
