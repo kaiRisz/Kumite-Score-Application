@@ -32,3 +32,19 @@ class Menu:
         self.bg_image = Image.open("image/menu.jpg")
         self.bg_image = self.bg_image.resize((1366, 768))
         self.bg_photo = ImageTk.PhotoImage(self.bg_image)
+
+      self.canvas = tk.Canvas(self.root, width=1366, height=768)
+        self.canvas.pack(fill="both", expand=True)
+        self.canvas.create_image(0, 0, image=self.bg_photo, anchor="nw")
+
+        self.tombol_mulai = tk.Button(
+            self.root, text="START", font=("system", 16, "bold"), width=20, height=2,
+            bg="white", fg="black", command=self.tampilkan_pesan
+        )
+        self.tombol_mulai.place(relx=0.5, rely=0.62, anchor="center")
+
+        self.tombol_klasmen = tk.Button(
+            self.root, text="STANDINGS", font=("system", 16, "bold"), width=20, height=2,
+            bg="white", fg="black", command=self.tampilkan_pesan
+        )
+        self.tombol_klasmen.place(relx=0.5, rely=0.72, anchor="center")
