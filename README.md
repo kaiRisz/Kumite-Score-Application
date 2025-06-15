@@ -10,10 +10,10 @@ Proyek ini merupakan hasil kolaborasi dari empat anggota tim:
 </p>
 
 <ul>
-  <li><strong>Zahra Ayu Azizah</strong>  2417051007</li>
-  <li><strong>Indriyani Talitha Putri</strong>  2417051022</li>
-  <li><strong>Khaila Noverisya Nurdi</strong>  2417051022</li>
-  <li><strong>Achira Desya Lucy</strong>  2417051069</li>
+  <li><strong>Zahra Ayu Azizah</strong>          2417051007</li>
+  <li><strong>Indriyani Talitha Putri</strong>   2417051022</li>
+  <li><strong>Khaila Noverisya Nurdi</strong>    2417051022</li>
+  <li><strong>Achira Desya Lucy</strong>         2417051069</li>
 </ul>
 
 <h2>Fitur Utama</h2>
@@ -38,8 +38,8 @@ Proyek ini merupakan hasil kolaborasi dari empat anggota tim:
 <h2>Kontak</h2>
 <p>Jangan ragu untuk menghubungi kami jika ada pertanyaan, saran, atau masukan:</p>
 <ul>
-  <li>Zahra  : @zhraayzzh</li>
-  <li>Inri   : @indritalitha_</li>
-  <li>Khaila : @k.noverisya</li>
-  <li>Achira : @achiraacy_</li>
+  <li>Zahra      : @zhraayzzh</li>
+  <li>Indri      : @indritalitha_</li>
+  <li>Khaila     : @k.noverisya</li>
+  <li>Achira     : @achiraacy_</li>
 </ul>
